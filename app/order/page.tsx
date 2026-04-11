@@ -12,7 +12,7 @@ export default function orderPage() {
 
   const getData = async (pageNumber: number = 1) => {
     try {
-      const res = await OrderService.getOrders(pageNumber);
+      const res = await OrderService.getOrders(pageNumber, 5);
       setDataOrder(res.data.data);
       setTotalPage(res.data?.meta?.total_page || 1);
     } catch (error: any) {
