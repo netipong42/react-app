@@ -113,7 +113,7 @@ export default function editOrderPage() {
 
   return (
     <div className="p-5">
-      <h1 className="text-2xl font-bold mb-4">Create Order</h1>
+      <h1 className="text-2xl font-bold mb-4">Edit Order</h1>
 
       {fields.map((field) => (
         <InputField
